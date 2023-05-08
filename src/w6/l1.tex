@@ -1,0 +1,47 @@
+% \wde{125} Let $X = \R$ and $d$ be the standard metric.
+% A subset $K$ of $\R$ is said to be compact iff every sequence of elements of $K$
+% has a subsequence that converges to an element of $K$.
+% \we{126}
+% Compact: $[a,b], \R \cup \{-\infty, \infty\}, \emptyset$, not: $(0,1), \R$.
+% \wt{127 Heine-Borel}
+% On $\R$ with the stdmet., a subset $K$ of $\R$ is compact iff $K$ is closed and bounded.
+% Also true on $\R^n$ with the Euclidean metric.
+% \wt{129, 130 EVT} $K \subseteq \R$ compact, $f: K \to \R$ cont. then $f$ is bounded and attains its bounds.
+% \wde{131 Open cover} of a set $S$ in a metric space is a family $(G_i)_{i \in I}$ of open sets s.t.
+% $S \subseteq \bigcup_{i \in I} G_i$.
+% A subcover is $(G_i)_{i \in J}$ s.t. $J \subseteq I$ and $S \subseteq \bigcup_{i \in J} G_i$.
+% \wt{} On $\R$ with the stdmet. (ORS), a subset $K$ of $\R$ is compact iff every open cover of $K$
+% has a finite subcover.
+% \wl{134} Every open cover of $[a,b]$ has a finite subcover.
+% \wt{135} ORS, if $K$ compact then every open cover of $K$ has a finite subcover.
+% \wt{136} 
+
+\wde{125} Let $X = \R$ and $d$ be the standard metric.
+A subset $K$ of $\R$ is said to be compact iff every sequence of elements of $K$
+has a subsequence that converges to an element of $K$.
+\we{126}
+Compact: $[a,b], \R \cup \{-\infty, \infty\}, \emptyset$, not: $(0,1), \R$.
+\wt{} ORS
+(1) (Heine-Borel): compact iff closed and bounded (also on $\R^n$ with Euclidean metric).
+(2) compact iff every open cover has a finite subcover.
+\wt{} ORS $K$ compact then $f: K \to \R$ cont. then $f$ is bounded and attains its bounds.
+$[a,b]$ compact.
+
+\wde{137} $(X, d)$ metric space, $K \subseteq X$.
+(1) $K$ sequentially compact iff every seq. in $K$ has a subseq. that conv. to some $x \in K$.
+(2) $K$ compact iff every open cover of $K$ has a finite subcover.
+\wt{} $K \subseteq X$ compact iff $K$ sequentially compact.
+\we{139} $(x_n) \to x \Rightarrow \{x_n : n \in \N\} \cup \{x\}$ compact.
+\we{140} $d$ the discrete metric on $X$, $K \subseteq X$ then $K$ compact iff $K$ finite.
+\wt{141} $K$ compact then $K$ closed and bounded.
+\we{142} converse of $141$ is false: $X = K = (0,1)$.
+\wt{144} $X$ compact then $K$ compact iff $K$ closed.
+\wt{145} $X$ compact then complete.
+\wt{147 EVT} $(X,d)$ metric space, $K$ compact subset, $f: K \to \R$ cont.,
+Then $f$ is bounded and attains its bounds.
+\wt{148 Uniform continuity (UC)} $(X,d_X), (Y,d_Y)$ metric spaces,
+$f: X \to Y$ is uniformly continuous iff $\forall \epsilon > 0, \exists \delta > 0$ s.t.
+$\forall x, x' \in X, d_X(x, x') < \delta \Rightarrow d_Y(f(x), f(x')) < \epsilon$.
+\we{149} $x^2$ not UC.
+\we{150} Lipschitz $\Rightarrow$ UC.
+Converse is not true (see: Hölder-alpha).
