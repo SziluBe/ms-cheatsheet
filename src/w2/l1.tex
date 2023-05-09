@@ -1,0 +1,32 @@
+\we{17 Subspaces, induced metric}
+$(X,d)$ MS, $\emptyset \neq Y \subseteq X$.
+$d_Y: Y \times Y \to \R, d_Y(x,y) = d(x,y)$.
+Then $(Y,d_Y)$ is a MS, called a subspace of $(X,d)$.
+And $d_Y$ is called the induced metric on $Y$.
+\wd{18 Open Balls}
+$(X,d)$ MS, $c \in X, r > 0$.
+$B(c,r) = \{x \in X: d(x,c) < r\}$ is the open ball of radius $r$ centered at $c$ in $(X,d)$.
+\wde{25 Convergent Sequence}
+$(X,d)$ MS, $(x_n)_{n \in \N}$ a sequence in $X$.
+$x \in X$ is a limit of $(x_n)$ iff
+$\forall \epsilon > 0, \exists N \in \N, \forall n \geq N, d(x_n,x) < \epsilon$.
+$d(x_n,x) < \epsilon$ iff $x_n \in B(x,\epsilon)$.
+\wt{26 Unique Limit}
+(1) $(X,d)$ MS, $x, x' \in X, x \neq x'$.
+Then $\exists \epsilon > 0, B(x,\epsilon) \cap B(x',\epsilon) = \emptyset$.
+(2) A seq. in a MS has at most one limit.
+\we{27} Seq. in $\R^N$ converges iff each component seq. converges.
+This holds with $d_p$ for $p \in [1,\infty)$.
+\we{29} In $\ell^p$, $p \in [1,\infty)$
+convergence implies convergence of each component seq.
+Converse is false.
+\wpr{Convergence in $C([a,b])$}
+$(f_n) \to f$ iff $(f_n)$ converges uniformly to $f$.
+\wt{31} Convergent implies bounded.
+Converse is false.
+\wde{33 Cauchy Sequence}
+$(X,d)$ MS, $(x_n)_{n \in \N}$ a sequence in $X$.
+$(x_n)$ is Cauchy iff
+$\forall \epsilon > 0, \exists N \in \N, \forall n,m \geq N, d(x_n,x_m) < \epsilon$.
+\wt{34} Convergent implies Cauchy.
+Cauchy does not imply convergent.

@@ -1,0 +1,32 @@
+\wde{70 Limit point} $(X,d)$ MS, $A \subseteq X$, $x \in X$.
+$x$ is a limit point of $A$ iff
+$\forall r > 0, (B(x, r) \setminus \{x\}) \cap A \neq \emptyset$.
+The set of limit points of $A$ is the derived set of $A$, denoted $A'$.
+\we{71} $x$ is a limit point of $A$ iff
+there exists a sequence $(a_n)_{n \in \N}$ in $A \setminus \{x\}$ s.t. $a_n \to x$.
+\we{73} $(X,d)$ MS, $A \subseteq X$. Then $\overline{A} = A \cup A'$.
+\wde{74 Continuity} $(X, d_X), (Y, d_Y)$ MS, $f: X \to Y$, $x_0 \in X$.
+$f$ is continuous at $x_0$ iff
+for every $\epsilon > 0$, there exists $\delta > 0$ s.t.
+$d_X(x, x_0) < \delta \implies d_Y(f(x), f(x_0)) < \epsilon$.
+\wt{75} $(X, d_X), (Y, d_Y)$ MS, $f: X \to Y$, $x_0 \in X$.
+Then $f$ is continuous at $x_0$ iff
+for every open nbhd $G$ of $f(x_0)$ in $Y$,
+there exists an open nbhd $N$ of $x_0$ in $X$ s.t. $f(N) \subseteq G$,
+i.e. $\forall x \in N: f(x) \in G$.
+\we{76} $(X, d_X), (Y, d_Y)$ MS, $f: X \to Y$, $x_0 \in X$.
+Then $f$ is continuous at $x_0$ iff
+for every nbhd $N$ of $f(x_0)$ in $Y$,
+the set $f^{-1}(N)$ is a nbhd of $x_0$ in $X$.
+\wt{77} $(X, d_X), (Y, d_Y)$ MS, $f: X \to Y$, $x_0 \in X$. TFAE
+(1) $f$ is continuous at $x_0$.
+(2) For every seq. $(x_n)_{n \in \N}$ in $X$ s.t. $x_n \to x_0$ in $X$,
+we have $f(x_n) \to f(x_0)$ in $Y$.
+\wde{78 Continuity} $(X, d_X), (Y, d_Y)$ MS, $f: X \to Y$.
+$f$ is continuous iff it is continuous at every point of $X$.
+\wt{79} $(X, d_X), (Y, d_Y)$ MS, $f: X \to Y$.
+Then $f$ is continuous iff
+the inverse image $f^{-1}(G)$ of every open set $G \subseteq Y$ is open in $X$.
+\we{80} $(X, d_X), (Y, d_Y), (Z, d_Z)$ MS,
+$f: X \to Y$, $g: Y \to Z$ both continuous.
+Then $g \circ f: X \to Z$ is continuous.
