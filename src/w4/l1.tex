@@ -1,1 +1,45 @@
-\we{96}
+\wde{81 Topological Space} A topological space is
+a set $X$ equipped with a collection $\mathcal{T}$ of subsets of $X$, s.t.
+(1) $\emptyset, X \in \mathcal{T}$;
+(2) $\mathcal{T}$ is closed under arbitrary unions (closed under means the result of such an operation is in $\mathcal{T}$);
+(3) $\mathcal{T}$ is closed under finite intersections.
+$\mathcal{T}$ is called a topology on $X$, and the elements of $\mathcal{T}$ are called open sets.
+\wde{82 Continuity}
+$(X, \mathcal{T}_X)$ and $(Y, \mathcal{T}_Y)$ topological spaces,
+$f: X \to Y$ continuous iff the preimage of every open set in $X$ is open in $Y$
+$\forall G \in \mathcal{T}_Y, f^{-1}(G) \in \mathcal{T}_X$.
+\wde{Homeomorphism} $f$ is a homeomorphism iff
+it is a continuous bijection and its inverse is continuous.
+If such an $f$ exists, then $X$ and $Y$ are homeomorphic.
+Remark: Homeomorphicity preserves topological properties,
+e.g. compactness, connectedness, separability, etc.
+These are properties that can be defined in terms of open sets.
+\we{83} Any function from a discrete metric space to any other metric space is continuous.
+\we{84} Any function from any metric space to a discrete metric space is not continuous unless it is constant.
+\we{86} Integration on $C([a,b])$ with $d_\infty$ to $\R$ is continuous.
+\we{88} Product space $Z = X \times Y$, product metric $D((x,y), (x',y')) = d_X(x,x') + d_Y(y,y')$.
+Convergence iff convergence in both $X$ and $Y$.
+\we{89} $x, x', y, y' \in X: |d(x,y) - d(x',y')| \leq d(x,x') + d(y,y')$.
+\wt{90} $d: X \times X \to \R$ is continuous. (Under the product metric on $X \times X$ and the stdmet. on $\R$.)
+\wt{Continuity of Linear Operators}
+Matrix multiplication is continuous.
+$A$ a matrix with entries in $\R$, $x, x' \in \R^n$.
+Then $||Ax||_2 \leq C||x||_2$ for some $C > 0$.
+\wt{Metrics over normed linear spaces}
+$(X, ||\cdot||_X)$ a normed linear space.
+$d: X \times X \to \R$ def. by $d(x,y) = ||x-y||_X$ is a metric on $X$.
+\wde{91 Bounded linear operators}
+A linear  $T: X \to Y$ is said to be bounded iff
+there exists $C > 0$ s.t. $||T(x)||_Y \leq C||x||_X$ for all $x \in X$.
+\wt{92 Linear op. continuity} TFAE
+(1) T Cont.
+(2) T Cont. at $0$.
+(3) T Bounded.
+\wde{93}
+$(X, d_X)$ and $(Y, d_Y)$ metric spaces.
+$f: X \to Y$ is Lipschitz iff
+$\exists L > 0$ s.t. $d_Y(f(x), f(x')) \leq Ld_X(x,x')$ for all $x, x' \in X$.
+If $L < 1$ then $f$ is a contraction.
+\wt{94} Lipschitz $\Rightarrow$ UC.
+\wde{95 Fixed points}
+A fixed point $x \in X$ of $f: X \to X$, where $X \neq \emptyset$ is a point s.t. $f(x) = x$.

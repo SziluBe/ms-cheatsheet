@@ -1,0 +1,26 @@
+\wt{107} $a,b \in \R$, $a < b$, $C([a,b])$ with its usual metric
+$d(f,g) = \sup_{x \in [a,b]} |f(x) - g(x)|$ is complete.
+\we{108} $(X,d_X), (Y, d_Y)$ metric spaces, $(Y, d_Y)$ complete.
+Let $C(X,Y)$ be the set of cont. and bdd. functions from $X$ to $Y$.
+For $f,g \in C(X,Y)$ define $D(f,g) = \sup_{x \in X} d_Y(f(x), g(x))$.
+Then $D$ is a metric on $C(X,Y)$, and $(C(X,Y), D)$ is complete.
+\wde{110} $(X,d)$ MS, $n \in \N$. Def. $D_p: X^n \to \R$ by
+$D_p(x,y) = \left( \sum_{i=1}^n d(x_i, y_i)^p \right)^{1/p}$, where $1 \leq p \leq \infty$.
+\we{112} If $(X, d)$ is complete, then $(X^n, D_p)$ is complete.
+\wde{114} $B^A$ where $A, B$ sets is the set of all functions from $A$ to $B$.
+\we{115} $X^\N$ is the set of all sequences in $X$.
+\wde{116} $D: X^\N \times X^\N \to \R$ def. by
+$D(x_1, x_2) = \sum_{n=1}^\infty \frac{1}{2^n} \frac{d(x_1(n), x_2(n))}{1 + d(x_1(n), x_2(n))}$
+is a metric on $X^\N$.
+\wt{118} $(X,d)$ MS, $(x_k)_{k=1}^\infty$ a sequence in $X^\N$, and $x \in X^\N$.
+Then $x_k \to x$ iff every component sequence $x_k^{(i)} \to x^{(i)}$.
+\wt{119 Product Space Completeness}
+$(X, d)$ complete MS, then $(X^\N, D)$ is complete.
+\wde{Completeness Axiom}
+Every non-empty bounded above subset of $\R$ has a least upper bound.
+Therefore,
+(1) Every non-empty bounded below subset of $\R$ has a greatest lower bound.
+(2) Every bounded monotone sequence in $\R$ converges.
+\we{121} $A \neq \emptyset$ a bdd. subset of $\R$.
+Then $\sup A$ and $\inf A$ exist, and
+if $\forall a,b \in A$: $d(a,b) < \epsilon$, then $\sup A - \inf A \leq \epsilon$.
