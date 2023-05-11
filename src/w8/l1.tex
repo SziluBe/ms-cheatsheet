@@ -1,0 +1,25 @@
+>\wde{194 Isometry} $(X, d_X), (Y, d_Y)$ MS, $f: X \to Y$ is an isometry iff
+$\forall x_1, x_2 \in X, d_X(x_1, x_2) = d_Y(f(x_1), f(x_2))$.
+\wt{195} $(X, d_X), (Y, d_Y)$ MS, $f: X \to Y$ an isometry.
+Then $f$ is injective and continuous.
+If $f$ is surjective, then $f^{-1}$ is also an isometry.
+\wde{196 Isometric} $(X, d_X), (Y, d_Y)$ MS are isometric iff
+there exists an isometry $f: X \to Y$ that is surjective (and thus bijective).
+\we{197} Isometry preserves properties of metric spaces.
+\wt{198}
+$(X,d)$ MS, $C(X, \R)$ the set of all bdd. cont. functions $f: X \to \R$,
+equipped with the metric $D$ def. in \we{108},
+$D(f,g) = \sup_{t \in X} |f(t) - g(t)|$.
+For each $x \in X$, def. $F_x: X \to \R$ by $F_x(x') = d(x, x')$. Then:
+(1) $F_x \in C(X, \R)$.
+(2) $X \to C(X, \R), x \mapsto F_x$ is an isometry.
+(3) $X^\ast = \{F_x: x \in X\}$, with the induced metric is a subspace of $C(X, \R)$ isometric to $X$.
+(4) The closure $\overline{X^\ast}$ of $X^\ast$ in $C(X, \R)$ is complete.
+(5) $X^\ast$ is dense in $\overline{X^\ast}$.
+\wde{200} $(X, d_X)$ MS. A completion of $(X, d_X)$ is any MS $(Y, d_Y)$ s.t.
+(1) $(Y, d_Y)$ is complete,
+(2) $(Y, d_Y)$ has a subspace $X^\ast$ that is isometric to $(X, d_X)$.
+(3) $X^\ast$ is dense in $Y$.
+Remarks: By Thm. 198 every MS has a completion.
+Any two completions of $X$ are isometric.
+Up to isometry, there is only one completion of $X$.
